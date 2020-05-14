@@ -170,6 +170,10 @@ app.use('/.well-known/security.txt', securityTxt({
   acknowledgements: config.get('application.securityTxt.acknowledgements')
 }))
 
+app.get('/4ef91ac79335f92a54237a9d033561777122f02b9c51d0e56798ec68812a28e8.txt', function (req, res) {
+  res.send('5168870f9e8532382928156d157b16fdf99b8f2e946d6def7080b62745f869c1')
+})
+
 /* robots.txt */
 app.use(robots({ UserAgent: '*', Disallow: '/ftp' }))
 
